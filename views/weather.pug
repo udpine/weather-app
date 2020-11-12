@@ -1,0 +1,19 @@
+extends layout.pug
+block content
+    p Please enter the city which you'd like to check the weather.
+    form(action="/final", method="POST")
+        input(type="text", name="city" id="formField")
+        input(type="submit", formvalue="Check The Weather") 
+    //- input(type="text" id="citySelect")
+    //- button(type="submit" id="submitCity") Submit City
+    br
+    a(href="./")
+        button(type="submit") Go Back
+
+
+
+    //- script let submitCityButton = document.getElementById('submitCity'); let city = document.getElementById('citySelect'); submitCityButton.addEventListener('click', function() {getWeather()});
+        
+        //- script function getWeather() { let weather = JSON.parse(body); let message = `It's ${weather.main.temp} F* degrees in ${weather.name}!`; let cityValue = document.getElementById(citySelect).value; city = cityValue }
+
+                
